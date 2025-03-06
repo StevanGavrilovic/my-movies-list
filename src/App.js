@@ -40,7 +40,7 @@ function App() {
           setIsLoading(true);
           setError("");
           const res = await fetch(
-            `http://www.omdbapi.com/?apikey=${KEY}&s=${searchQuery}`
+            `https://www.omdbapi.com/?apikey=${KEY}&s=${searchQuery}`
           );
           if (!res.ok) throw new Error("Something is not ok with fetching");
           const data = await res.json();
@@ -446,7 +446,7 @@ function MovieDetails({
         setIsMovieDetailsLoading(true);
         onSetError("");
         const res = await fetch(
-          `http://www.omdbapi.com/?apikey=${KEY}&i=${selectedMovie.imdbID}`
+          `https://www.omdbapi.com/?apikey=${KEY}&i=${selectedMovie.imdbID}`
         );
         if (!res.ok) throw new Error("Something is wrong with fetching movie");
         const data = await res.json();
