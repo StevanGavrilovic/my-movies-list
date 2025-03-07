@@ -753,9 +753,8 @@ body::before {
   .user-home-movie-info-container:last-child {
     max-width: 100%;
   }
-
-  .user-main-container {
-    position: absolute;
+  .main-container {
+    height: unset;
   }
 
   .user-home::before {
@@ -870,6 +869,12 @@ body::before {
   }
   .option-container {
     width: 200px;
+  }
+  .movie-results {
+    height: 93dvh;
+    width: 151%;
+    top: 40px;
+    right: 0px;
   }
 }
 
