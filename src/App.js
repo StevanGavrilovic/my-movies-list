@@ -349,7 +349,7 @@ function WatchList({
     : sortedGenres.sort((a, b) => b.userRating - a.userRating);
 
   const styledHeight = {
-    height: "500px",
+    height: "460px",
   };
 
   const isAdded = userAddedToWatchList.some(
