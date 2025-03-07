@@ -819,11 +819,35 @@ body::before {
   .user-name-test {
     font-size: var(--font-size-xs);
   }
+  .navigation-list {
+    align-items: flex-end;
+  }
+  .navigation-item {
+    font-size: 11px;
+    padding: 5px;
+    width: max-content;
+  }
+  .user-info {
+    padding: 20px 0px 0;
+  }
+  .hot-movies-option {
+    padding-top: 10px;
+  }
 }
 
 @media screen and (max-width: 360px) {
   .navigation-item {
     font-size: 11px;
     padding: 5px;
+    width: max-content;
+  }
+  .user-info {
+    padding: 20px 0px 0;
+  }
+  .hot-movies-option {
+    padding-top: 10px;
+  }
+  .popcorn-img {
+    height: 232px;
   }
 }
