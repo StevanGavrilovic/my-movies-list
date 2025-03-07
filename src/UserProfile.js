@@ -4,7 +4,7 @@ export function UserProfile() {
       <p className="user-name-test">
         Stevan<span>'s</span>
       </p>
-      <img className="profile-pic" src="/stevan.webp" alt="Profile-pic" />
+      <img className="profile-pic" src="./stevan.webp" alt="Profile-pic" />
     </div>
   );
 }
