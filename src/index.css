@@ -75,27 +75,27 @@ body::before {
   grid-template-rows: 50px 1fr;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.336);
-  border-radius: 20px;
   height: 95dvh;
 }
 
 .main-container {
-  width: 100%;
-  max-height: 918px;
   height: 100%;
+  overflow: hidden;
+}
+
+.user-main-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Navigation */
 .navigation-container {
-  display: flex;
-  grid-row: span 2;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
+  background: #091110cb;
   background: var(--secondary-bg);
+  display: block;
+  grid-row: span 2;
   padding: var(--spacing-l);
-  max-width: 280px;
-  width: 100%;
 }
 
 .navigation-list {
@@ -163,7 +163,7 @@ body::before {
   position: absolute;
   top: 42px;
   width: 333px;
-  max-height: 916px;
+  max-height: 89dvh;
   height: max-content;
   overflow-y: auto;
   z-index: 3;
@@ -227,12 +227,6 @@ body::before {
   border-bottom: var(--border);
 }
 
-.user-list-main-container,
-.user-main-container {
-  width: 100%;
-  height: 100%;
-}
-
 .user-home-image-container {
   width: 100%;
   max-width: 208px;
@@ -251,8 +245,8 @@ body::before {
   grid-template-columns: repeat(auto-fill, 198px);
   grid-template-rows: repeat(auto-fill, 330px);
   gap: var(--spacing-l);
-  overflow-y: auto;
-  height: fit-content;
+  overflow-y: auto; /* Dozvoljava skrolovanje samo ovde */
+  height: 100%; /* Preuzima visinu od roditelja */
   padding: 0 20px;
 }
 
@@ -372,7 +366,6 @@ body::before {
 .my-list-title {
   background: var(--secondary-bg);
   padding: var(--spacing-s);
-  padding-bottom: 20px;
   font-weight: 200;
   display: flex;
   justify-content: space-between;
@@ -412,6 +405,7 @@ body::before {
   font-size: var(--font-size-s);
   color: white;
   font-weight: 300;
+  height: 33px;
   cursor: pointer;
   width: 100px;
   border-radius: var(--border-radius);
@@ -610,7 +604,7 @@ body::before {
   }
 
   .user-home {
-    max-height: 390px;
+    max-height: 400px;
   }
 
   .navigation-container {
@@ -637,6 +631,8 @@ body::before {
 
   .navigation-container {
     flex-direction: row;
+    display: flex;
+    justify-content: space-between;
     max-width: 900px;
     width: 100%;
     height: fit-content;
@@ -871,7 +867,8 @@ body::before {
     width: 200px;
   }
   .movie-results {
-    height: 93dvh;
+    height: 100%;
+    max-height: 93dvh;
     width: 151%;
     top: 40px;
     right: 0px;

@@ -348,10 +348,10 @@ function WatchList({
     ? sortedGenres.sort((a, b) => a.userRating - b.userRating)
     : sortedGenres.sort((a, b) => b.userRating - a.userRating);
 
-  const styledHeight = {
-    height: "505px",
-    maxHeight: "510px",
-  };
+  // const styledHeight = {
+  //   height: "505px",
+  //   maxHeight: "510px",
+  // };
 
   const isAdded = userAddedToWatchList.some(
     (movie) => movie.imdbID === selectedMovie.imdbID
@@ -395,7 +395,7 @@ function WatchList({
             </h2>
           </div>
         ) : null}
-        <div className="users-list-container" style={styledHeight}>
+        <div className="users-list-container">
           {sortedGenres.map((movie) => (
             <WatchListMovieCard
               key={movie.imdbID}
