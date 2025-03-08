@@ -9,7 +9,7 @@ export function NavigationMenu({ onSetHomePage }) {
           Friends movies <i class="fas fa-user-friends  "></i>
         </li>
         <li className="navigation-item" onClick={() => onSetHomePage(false)}>
-          Hot movies <i class="fas fa-fire-alt"></i>
+          Popular movies <i class="fas fa-fire-alt"></i>
         </li>
         <li className="navigation-item">Friend code - 23rew231</li>
       </ul>
