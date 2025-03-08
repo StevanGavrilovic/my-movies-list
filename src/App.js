@@ -141,7 +141,7 @@ function HotMovies({ userAddedToWatchList, onSetHomePage, onSelectedMovie }) {
           onClick={() => onSetHomePage((prev) => !prev)}
           className="fas fa-arrow-left back-arrow"
         ></i>
-        Hot Movies
+        Popular Movies
         <SortButton
           onClick={setIsSorted}
           sortStringValue={"Sort by IMDB rating"}
