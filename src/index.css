@@ -867,7 +867,7 @@ body::before {
     width: 200px;
   }
   .movie-results {
-    height: 100%;
+    height: fit-content;
     max-height: 93dvh;
     width: 151%;
     top: 40px;
