@@ -6,7 +6,7 @@ export function NavigationMenu({ onSetHomePage }) {
           My watchlist <i class="fas fa-film"></i>
         </li>
         <li className="navigation-item">
-          Friends movies <i class="fas fa-user-friends"></i>
+          Friends movies <i class="fas fa-user-friends  "></i>
         </li>
         <li className="navigation-item" onClick={() => onSetHomePage(false)}>
           Hot movies <i class="fas fa-fire-alt"></i>
