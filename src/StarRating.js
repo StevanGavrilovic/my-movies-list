@@ -8,7 +8,6 @@ const containerStyle = {
 
 const starContainerStyle = {
   display: "flex",
-  gap: "4px",
 };
 
 export default function StarRating({
